@@ -7,7 +7,7 @@ function App() {
     <>
       <BarraIntegradora />
       <Home />
-      <BarraIntegradoraFooter />
+      {/* <BarraIntegradoraFooter /> */}
     </>
   )
 }

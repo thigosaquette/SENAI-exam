@@ -13,13 +13,19 @@ export const globalStyles = globalCss({
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
   },
-  body: {
-    margin: 0,
-    display: 'flex',
-    placeItems: 'center',
-    minWidth: '320px',
-    minHeight: '100vh',
-  },
+html: {
+  width: '100%',
+  height: '100%',
+},
+body: {
+  width: '100%',
+  height: '100%',
+  margin: 0,
+  display: 'flex',
+  placeItems: 'center',
+  minWidth: '320px',
+  minHeight: '100vh',
+},
   h1: {
     margin: 0,
   },

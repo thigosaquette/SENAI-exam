@@ -18,7 +18,16 @@ const BarraContainer = styled('header', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   alignItems: 'center',
-  background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 74.5%, rgba(0, 0, 0, 0.059) 100%), #FFFFFF'
+  background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 74.5%, rgba(0, 0, 0, 0.059) 100%), #FFFFFF',
+  '@media (max-width: 1520px)': {
+    width: '100%',
+    height: '50px',
+    left: 0,
+    transform: 'none',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: 0
+  }
 })
 
 const ConteudoInterno = styled('div', {
@@ -30,11 +39,17 @@ const ConteudoInterno = styled('div', {
   gap: '8px',
   margin: '0 auto',
   width: '1216px',
-  maxWidth: '1216px',
+  maxWidth: '100%',
   height: '36px',
   flex: 'none',
   order: 0,
-  flexGrow: 1
+  flexGrow: 1,
+  '@media (max-width: 1520px)': {
+    flexDirection: 'column',
+    width: '100%',
+    height: 'auto',
+    gap: '0px',
+  }
 })
 
 const Logos = styled('div', {
@@ -49,6 +64,12 @@ const Logos = styled('div', {
   order: 0,
   flexGrow: 0,
   cursor: 'pointer',
+  '@media (max-width: 1520px)': {
+    width: '100%',
+    height: '28px',
+    justifyContent: 'center',
+    gap: '8px'
+  }
 })
 
 const LogoWrapper = styled('div', {
@@ -57,6 +78,9 @@ const LogoWrapper = styled('div', {
   height: '36px',
   '&:hover div[data-base]': {
     display: 'block'
+  },
+  '@media (max-width: 1520px)': {
+    height: '28px'
   }
 })
 
@@ -67,14 +91,32 @@ const LogoBase = styled('div', {
   left: 0,
   right: 0,
   height: '4px',
-  display: 'none'
+  display: 'none',
+  '@media (max-width: 1520px)': {
+    height: '2px',
+    bottom: '-3px',
+    top: 'auto'
+  }
 })
 
 const LogoShape = styled('img', {
   position: 'absolute',
   top: '0px',
   height: '36px',
-  objectFit: 'contain'
+  objectFit: 'contain',
+  '@media (max-width: 1520px)': {
+    height: '28px'
+  }
+})
+
+const DividerLine = styled('div', {
+  width: '100%',
+  height: '0px',
+  borderBottom: '1px solid #D9DEE3',
+  display: 'none',
+  '@media (max-width: 1520px)': {
+    display: 'block'
+  }
 })
 
 const LinksUteis = styled('nav', {
@@ -91,25 +133,29 @@ const LinksUteis = styled('nav', {
   order: 1,
   flexGrow: 0,
   cursor: 'pointer',
+  '@media (max-width: 1520px)': {
+    width: '360px',
+    height: '22px'
+  }
 })
 
 const LinkItem = styled('span', {
-    fontFamily: 'Open Sans, sans-serif',
-    fontStyle: 'normal',
-    fontWeight: 400,
-    fontSize: '10px',
-    lineHeight: '14px',
-    color: '#9BA2B0',
-    flex: 'none',
-    flexGrow: 0
+  fontFamily: 'Open Sans, sans-serif',
+  fontStyle: 'normal',
+  fontWeight: 400,
+  fontSize: '10px',
+  lineHeight: '14px',
+  color: '#9BA2B0',
+  flex: 'none',
+  flexGrow: 0
 })
 
 const Divider = styled('div', {
-    width: '0px',
-    height: '10px',
-    borderLeft: '1px solid #9BA2B0',
-    flex: 'none',
-    flexGrow: 0
+  width: '0px',
+  height: '10px',
+  borderLeft: '1px solid #9BA2B0',
+  flex: 'none',
+  flexGrow: 0
 })
 
 const BarraIntegradora = () => {
@@ -117,27 +163,28 @@ const BarraIntegradora = () => {
     <BarraContainer>
       <ConteudoInterno>
         <Logos>
-          <LogoWrapper style={{ width: '101.53px' }}>
-            <LogoShape src={sistemaFiep} style={{ width: '83px', left: '12px' }} />
+          <LogoWrapper style={{ width: '88px', height: '28px' }}>
+            <LogoShape src={sistemaFiep} style={{ width: '69px', left: '9px' }} />
             <LogoBase data-base style={{ background: '#192A6B' }} />
           </LogoWrapper>
-          <LogoWrapper style={{ width: '69.84px' }}>
-            <LogoShape src={fiep} style={{ width: '52px', left: '11px' }} />
+          <LogoWrapper style={{ width: '61px', height: '28px' }}>
+            <LogoShape src={fiep} style={{ width: '43px', left: '11px' }} />
             <LogoBase data-base style={{ background: '#248EDF' }} />
           </LogoWrapper>
-          <LogoWrapper style={{ width: '84.24px' }}>
-            <LogoShape src={senai} style={{ width: '66.24px', left: '12px' }} />
+          <LogoWrapper style={{ width: '73px', height: '28px' }}>
+            <LogoShape src={senai} style={{ width: '55px', left: '9px' }} />
             <LogoBase data-base style={{ background: '#FF8901' }} />
           </LogoWrapper>
-          <LogoWrapper style={{ width: '69.88px' }}>
-            <LogoShape src={sesi} style={{ width: '51.88px', left: '12px' }} />
+          <LogoWrapper style={{ width: '61px', height: '28px' }}>
+            <LogoShape src={sesi} style={{ width: '43px', left: '9px' }} />
             <LogoBase data-base style={{ background: '#96D200' }} />
           </LogoWrapper>
-          <LogoWrapper style={{ width: '55.44px' }}>
-            <LogoShape src={iel} style={{ width: '37px', left: '12px' }} />
+          <LogoWrapper style={{ width: '49px', height: '28px' }}>
+            <LogoShape src={iel} style={{ width: '31px', left: '9px' }} />
             <LogoBase data-base style={{ background: '#7314FF' }} />
           </LogoWrapper>
         </Logos>
+        <DividerLine />
         <LinksUteis>
           <LinkItem>SAC</LinkItem><Divider />
           <LinkItem>Carreira</LinkItem><Divider />

@@ -9,12 +9,12 @@ import HomeSection5 from '../components/HomeSection5'
 const Home = () => {
   return (
     <>
-      <HomeSection1 />
-      <HomeSection2 />
-      <HomeSection3 />
-      <HomeSection4 />
-      <HomeSection5 />
-      <AnniversaryBanner />
+      {/* <HomeSection1 /> */}
+      {/* <HomeSection2 /> */}
+      {/* <HomeSection3 /> */}
+      {/* <HomeSection4 /> */}
+      {/* <HomeSection5 /> */}
+      {/* <AnniversaryBanner /> */}
     </>
   )
 }
