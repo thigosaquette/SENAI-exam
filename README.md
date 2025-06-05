@@ -1,12 +1,39 @@
-# React + Vite
+SENAI-exam
+Este é um projeto desenvolvido utilizando Vite + React com JavaScript e gerenciado com pnpm.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pré-requisitos
+Antes de começar, é necessário ter instalado os seguintes programas no seu computador:
+- Node.js (versão recomendada 18 ou superior)
+- pnpm (para gerenciar os pacotes do projeto)
 
-Currently, two official plugins are available:
+Instalação
+Para configurar o projeto corretamente, siga os passos abaixo:
+- Clone este repositório para o seu ambiente de desenvolvimento
+- Acesse a pasta do projeto
+- Instale as dependências utilizando o comando pnpm install
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Execução do projeto
+Para rodar o ambiente de desenvolvimento localmente:
+- Execute o comando pnpm run dev
+- O servidor será iniciado e a aplicação ficará disponível em uma URL gerada pelo terminal
 
-## Expanding the ESLint configuration
+Produção
+Caso queira gerar uma versão otimizada do projeto para produção:
+- Execute o comando pnpm run build
+- O sistema criará uma pasta chamada dist com os arquivos prontos para deploy
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Estrutura do projeto
+O projeto segue uma organização clara para facilitar o desenvolvimento:
+- public → Contém arquivos estáticos
+- src → Armazena o código-fonte principal, incluindo:
+  - components → Componentes reutilizáveis
+  - pages → Páginas da aplicação
+  - assets → Imagens e estilos
+  - main.js → Ponto de entrada da aplicação
+  - App.jsx → Estrutura geral do projeto
+- package.json → Configuração dos pacotes utilizados
+- pnpm-lock.yaml → Registro das versões travadas das dependências
+- README.md → Documentação do projeto
+
+Licença
+Este projeto está sob a licença MIT.
