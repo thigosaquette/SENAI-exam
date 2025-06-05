@@ -8,7 +8,7 @@ import sistemaFiep from '../assets/barra-integradora/Logo-barra-integradora-sist
 const BarraContainer = styled('header', {
   position: 'absolute',
   zIndex: 999,
-  width: '1920px',
+  width: '100%',
   height: '2.25rem',
   left: '50%',
   top: 0,
@@ -20,7 +20,7 @@ const BarraContainer = styled('header', {
   alignItems: 'center',
   background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 74.5%, rgba(0, 0, 0, 0.059) 100%), #FFFFFF',
   '@media (max-width: 1520px)': {
-    width: '360px',
+    width: '100%',
     height: '3.125rem',
     left: 0,
     transform: 'none',
