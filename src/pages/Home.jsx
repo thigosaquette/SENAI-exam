@@ -11,14 +11,15 @@ const Home = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.matchMedia('(max-width: 768px)').matches)
+      setIsMobile(window.innerWidth <= 768)
     }
-    
+
     checkScreenSize()
     window.addEventListener('resize', checkScreenSize)
 
     return () => window.removeEventListener('resize', checkScreenSize)
   }, [])
+
 
   return (
     <>
