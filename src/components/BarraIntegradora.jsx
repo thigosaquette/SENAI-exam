@@ -101,7 +101,7 @@ const LogoBase = styled('div', {
 const LogoShape = styled('img', {
   position: 'absolute',
   top: '0px',
-  height: '2.25rem',
+  height: '1.8rem',
   objectFit: 'contain',
   '@media (max-width: 1520px)': {
     height: '1.75rem'
