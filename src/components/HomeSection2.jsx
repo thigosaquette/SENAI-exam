@@ -1,11 +1,30 @@
-import { styled } from '../styles'
+import React, { useState, useEffect } from 'react';
+import { styled } from '../styles';
 
-import menino from '../assets/home-part-2/pessoa-lendo.png'
-import icon1 from '../assets/home-part-2/mega-fone-icon.png'
-import icon2 from '../assets/home-part-2/robo-icon.png'
-import icon3 from '../assets/home-part-2/pessoa-icon.png'
-import icon4 from '../assets/home-part-2/mao-icon.png'
-import icon5 from '../assets/home-part-2/lampada-icon.png'
+import menino from '../assets/home-part-2/pessoa-lendo.png';
+import icon1 from '../assets/home-part-2/mega-fone-icon.png';
+import icon2 from '../assets/home-part-2/robo-icon.png';
+import icon3 from '../assets/home-part-2/pessoa-icon.png';
+import icon4 from '../assets/home-part-2/mao-icon.png';
+import icon5 from '../assets/home-part-2/lampada-icon.png';
+import okIcon from '../assets/icons/ok-icon.png';
+
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.matchMedia('(max-width: 1520px)').matches)
+    }
+    
+    checkScreenSize()
+    window.addEventListener('resize', checkScreenSize)
+
+    return () => window.removeEventListener('resize', checkScreenSize)
+  }, [])
+
+  return isMobile;
+};
 
 const Section2 = styled('section', {
   display: 'flex',
@@ -18,13 +37,23 @@ const Section2 = styled('section', {
   height: '462px',
   left: 'calc(50% - 1920px/2)',
   top: '1756px',
-})
+  '@media (max-width: 1520px)': {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '32px 20px',
+    gap: '40px',
+    width: '360px',
+    height: '663px',
+    left: 'calc(50% - 360px/2)',
+    top: '1180px',
+  },
+});
 
 const ImageContainer = styled('div', {
   position: 'relative',
   width: '226px',
-  height: '334px'
-})
+  height: '334px',
+});
 
 const ImageBackground = styled('div', {
   position: 'absolute',
@@ -33,8 +62,11 @@ const ImageBackground = styled('div', {
   left: 'calc(50% - 190px/2 - 6px)',
   bottom: 0,
   background: 'linear-gradient(180deg, rgba(255, 200, 0, 0) 0%, #FFC800 100%)',
-  borderRadius: '8px'
-})
+  borderRadius: '8px',
+  '@media (max-width: 1520px)': {
+    display: 'none',
+  },
+});
 
 const MeninoImage = styled('img', {
   position: 'absolute',
@@ -42,8 +74,11 @@ const MeninoImage = styled('img', {
   height: '334px',
   left: 0,
   top: 0,
-  objectFit: 'cover'
-})
+  objectFit: 'cover',
+  '@media (max-width: 1520px)': {
+    display: 'none',
+  },
+});
 
 const ContentContainer = styled('div', {
   display: 'flex',
@@ -51,8 +86,20 @@ const ContentContainer = styled('div', {
   alignItems: 'flex-start',
   gap: '32px',
   width: '750px',
-  height: '334px'
-})
+  height: '334px',
+  '@media (max-width: 1520px)': {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '0px',
+    gap: '16px',
+    width: '320px',
+    height: '599px',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
+});
 
 const TextButtonContainer = styled('div', {
   display: 'flex',
@@ -60,8 +107,13 @@ const TextButtonContainer = styled('div', {
   alignItems: 'flex-start',
   gap: '24px',
   width: '398px',
-  height: '334px'
-})
+  height: '334px',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '250px',
+  },
+});
+
 
 const TextContainer = styled('div', {
   display: 'flex',
@@ -69,8 +121,8 @@ const TextContainer = styled('div', {
   alignItems: 'flex-start',
   gap: '20px',
   width: '398px',
-  height: '262px'
-})
+  height: '262px',
+});
 
 const Title = styled('h2', {
   fontFamily: 'Open Sans, sans-serif',
@@ -83,8 +135,19 @@ const Title = styled('h2', {
   paddingRight: '30px',
   height: '114px',
   display: 'flex',
-  alignItems: 'center'
-})
+  alignItems: 'center',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '87px',
+    fontSize: '24px',
+    lineHeight: '120%',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+    paddingRight: 0,
+  },
+});
 
 const Description = styled('p', {
   fontFamily: 'Open Sans, sans-serif',
@@ -95,8 +158,19 @@ const Description = styled('p', {
   color: '#48536C',
   width: '368px',
   paddingRight: '30px',
-  height: '128px'
-})
+  height: '128px',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '70px',
+    fontSize: '18px',
+    lineHeight: '180%',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+    paddingRight: 0,
+  },
+});
 
 const Description2 = styled('p', {
   fontFamily: 'Open Sans, sans-serif',
@@ -108,8 +182,19 @@ const Description2 = styled('p', {
   width: '368px',
   paddingRight: '80px',
   height: '128px',
-  marginTop: '-18px'
-})
+  marginTop: '-18px',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '80px',
+    fontSize: '18px',
+    lineHeight: '180%',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+    paddingRight: 0,
+  },
+});
 
 const ButtonSesi = styled('button', {
   display: 'flex',
@@ -123,8 +208,17 @@ const ButtonSesi = styled('button', {
   background: '#96D200',
   borderRadius: '4px',
   border: 'none',
-  cursor: 'pointer'
-})
+  cursor: 'pointer',
+  '@media (max-width: 1520px)': {
+    padding: '0px 16px',
+    width: '320px',
+    height: '40px',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
+});
 
 const ButtonText = styled('span', {
   fontFamily: 'Open Sans, sans-serif',
@@ -135,16 +229,35 @@ const ButtonText = styled('span', {
   color: '#192A6B',
   display: 'flex',
   alignItems: 'center',
-  textAlign: 'center'
-})
+  textAlign: 'center',
+  '@media (max-width: 1520px)': {
+    height: '14px',
+    fontSize: '14px',
+    lineHeight: '100%',
+    flex: 'none',
+    order: 0,
+    flexGrow: 0,
+  },
+});
 
 const FeaturesContainer = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
   width: '320px',
-  height: '334px'
-})
+  height: '334px',
+  '@media (max-width: 1520px)': {
+    alignItems: 'flex-start',
+    padding: '0px',
+    width: '320px',
+    height: '240px',
+    flex: 'none',
+    order: 2,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
+});
+
 
 const FeatureItem = styled('div', {
   display: 'flex',
@@ -153,13 +266,23 @@ const FeatureItem = styled('div', {
   padding: '8px 0px',
   gap: '8px',
   borderBottom: '1px solid rgba(0, 0, 0, 0.1)',
-  width: '320px'
-})
+  width: '320px',
+  '@media (max-width: 1520px)': {
+    alignItems: 'center',
+    height: '48px',
+    padding: 0,
+  },
+});
+
 
 const FeatureIcon = styled('img', {
   width: '40px',
-  height: '40px'
-})
+  height: '40px',
+  '@media (max-width: 1520px)': {
+    width: '19px',
+    height: '19px',
+  },
+});
 
 const FeatureText = styled('span', {
   fontFamily: 'Open Sans, sans-serif',
@@ -167,10 +290,20 @@ const FeatureText = styled('span', {
   fontWeight: 400,
   fontSize: '16px',
   lineHeight: '120%',
-  color: '#48536C'
-})
+  color: '#48536C',
+});
 
 const HomeSection2 = () => {
+  const isMobile = useIsMobile();
+
+  const features = [
+    { icon: icon1, text: 'Protagonismo' },
+    { icon: icon2, text: 'Competições de Robótica' },
+    { icon: icon3, text: 'Trabalhos em equipe' },
+    { icon: icon4, text: 'Parcerias com a indústria' },
+    { icon: icon5, text: 'Inovação e tecnologia' },
+  ];
+
   return (
     <Section2>
       <ImageContainer>
@@ -188,18 +321,24 @@ const HomeSection2 = () => {
               Conheça mais sobre nosso modelo de ensino inovador. <br />
             </Description2>
           </TextContainer>
-          <ButtonSesi><ButtonText>Quero conhecer</ButtonText></ButtonSesi>
+          {!isMobile && (
+            <ButtonSesi><ButtonText>Quero conhecer</ButtonText></ButtonSesi>
+          )}
         </TextButtonContainer>
         <FeaturesContainer>
-          <FeatureItem><FeatureIcon src={icon1} alt="Protagonismo" /><FeatureText>Protagonismo</FeatureText></FeatureItem>
-          <FeatureItem><FeatureIcon src={icon2} alt="Competições de Robótica" /><FeatureText>Competições de Robótica</FeatureText></FeatureItem>
-          <FeatureItem><FeatureIcon src={icon3} alt="Trabalhos em equipe" /><FeatureText>Trabalhos em equipe</FeatureText></FeatureItem>
-          <FeatureItem><FeatureIcon src={icon4} alt="Parcerias com a indústria" /><FeatureText>Parcerias com a indústria</FeatureText></FeatureItem>
-          <FeatureItem><FeatureIcon src={icon5} alt="Inovação e tecnologia" /><FeatureText>Inovação e tecnologia</FeatureText></FeatureItem>
+          {features.map((feature, index) => (
+            <FeatureItem key={index}>
+              <FeatureIcon src={isMobile ? okIcon : feature.icon} alt={feature.text} />
+              <FeatureText>{feature.text}</FeatureText>
+            </FeatureItem>
+          ))}
         </FeaturesContainer>
+        {isMobile && (
+          <ButtonSesi><ButtonText>Vou conhecer</ButtonText></ButtonSesi>
+        )}
       </ContentContainer>
     </Section2>
-  )
-}
+  );
+};
 
-export default HomeSection2
+export default HomeSection2;

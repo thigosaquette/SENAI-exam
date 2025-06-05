@@ -11,7 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.matchMedia('(max-width: 768px)').matches)
+      setIsMobile(window.matchMedia('(max-width: 1520px)').matches)
     }
     
     checkScreenSize()
@@ -34,7 +34,7 @@ const Home = () => {
       ) : (
         <>
           <HomeSection1 />
-          {/* <HomeSection2 /> */}
+          <HomeSection2 />
           {/* <HomeSection3 /> */}
           {/* <HomeSection4 /> */}
           {/* <HomeSection5 /> */}
