@@ -11,15 +11,14 @@ const Home = () => {
 
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth <= 768)
+      setIsMobile(window.matchMedia('(max-width: 768px)').matches)
     }
-
+    
     checkScreenSize()
     window.addEventListener('resize', checkScreenSize)
 
     return () => window.removeEventListener('resize', checkScreenSize)
   }, [])
-
 
   return (
     <>
@@ -34,7 +33,7 @@ const Home = () => {
         </>
       ) : (
         <>
-          {/* <HomeSection1 /> */}
+          <HomeSection1 />
           {/* <HomeSection2 /> */}
           {/* <HomeSection3 /> */}
           {/* <HomeSection4 /> */}

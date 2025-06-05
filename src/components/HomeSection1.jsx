@@ -18,17 +18,13 @@ const Section1 = styled('section', {
   transform: 'translateX(-50%)',
   top: '36px',
   background: `linear-gradient(180deg, rgba(255, 200, 0, 0) 20.73%, #FFC800 59.1%), url(${sectionBackground}), #FFC800`,
-  backgroundRepeat: 'no-repeat'
-})
+  backgroundRepeat: 'no-repeat',
 
-const Braco = styled('div', {
-  position: 'absolute',
-  width: '589px',
-  height: '415px',
-  left: '972px',
-  top: 0,
-  backgroundSize: 'contain',
-  backgroundRepeat: 'no-repeat'
+  '@media (max-width: 1520px)': {
+    top: '50px',
+    height: '1097px',
+    width: '360px',
+  }
 })
 
 const Menina = styled('img', {
@@ -37,17 +33,15 @@ const Menina = styled('img', {
   height: '604px',
   left: '972px',
   top: '0px',
-  objectFit: 'contain'
-})
-
-const Robo = styled('div', {
-  position: 'absolute',
-  width: '90px',
-  height: '99px',
-  left: '1011px',
-  top: '168px',
-  backgroundSize: 'contain',
-  backgroundRepeat: 'no-repeat'
+  objectFit: 'contain',
+  '@media (max-width: 1520px)': {
+    width: '250px',
+    height: '265px',
+    left: 'calc(50% - 60.73px / 2)',
+    top: '0px',
+    objectFit: 'cover',
+    objectPosition: '30% 80%',
+  },
 })
 
 const SeloPrincipal = styled('img', {
@@ -56,17 +50,31 @@ const SeloPrincipal = styled('img', {
   height: '251px',
   left: '460px',
   top: '56px',
-  objectFit: 'contain'
+  objectFit: 'contain',
+  '@media (max-width: 1520px)': {
+    width: '127.33px',
+    height: '84px',
+    left: 'calc(50% - 320.73px / 2)',
+    top: '57px',
+  },
 })
+
 
 const Formando = styled('img', {
   position: 'absolute',
-  width: '399px',
-  height: '76px',
+  width: '914px',
+  height: '98.07px',
   left: '-11px',
   top: '359px',
-  objectFit: 'contain'
+  objectFit: 'contain',
+  '@media (max-width: 1520px)': {
+    width: '874px',
+    height: '38.93px',
+    left: '-422px',
+    top: '155px',
+  },
 })
+
 
 const Assista = styled('img', {
   position: 'absolute',
@@ -75,8 +83,16 @@ const Assista = styled('img', {
   left: 'calc(50% - 1008px / 2)',
   top: 'calc(50% - 572px / 2 - 8px)',
   borderRadius: '16px',
-  objectFit: 'cover'
+  objectFit: 'cover',
+  '@media (max-width: 1520px)': {
+    width: '320.73px',
+    height: '182px',
+    left: 'calc(50% - 320.73px / 2)',
+    top: 'calc(50% - 182px / 2 - 220.5px)',
+    borderRadius: '8px',
+  },
 })
+
 
 const BarraLogos = styled('div', {
   position: 'absolute',
@@ -84,7 +100,19 @@ const BarraLogos = styled('div', {
   height: '107px',
   left: 'calc(50% - 1218px / 2)',
   top: '1146px',
+  '@media (max-width: 1520px)': {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    justifyItems: 'center',
+    alignItems: 'center',
+    gap: '16px',
+    width: '320px',
+    height: '131px',
+    left: 'calc(50% - 320px / 2)',
+    top: '447px',
+  }
 })
+
 
 const Logo1 = styled('img', {
   position: 'absolute',
@@ -95,6 +123,13 @@ const Logo1 = styled('img', {
   paddingLeft: '87px',
   paddingRight: '87px',
   paddingBottom: '10px',
+  '@media (max-width: 1520px)': {
+    position: 'static',
+    width: '74px',
+    height: '54px',
+    padding: 0,
+    marginRight: 'auto',
+  },
 })
 
 const Logo2 = styled('img', {
@@ -107,6 +142,13 @@ const Logo2 = styled('img', {
   paddingLeft: '78px',
   paddingRight: '78px',
   paddingBottom: '7px',
+  '@media (max-width: 1520px)': {
+    position: 'static',
+    width: '89px',
+    height: '70px',
+    padding: 0,
+    marginRight: 'auto',
+  },
 })
 
 const Logo3 = styled('img', {
@@ -114,7 +156,12 @@ const Logo3 = styled('img', {
   width: '246.02px',
   height: '37px',
   left: '642px',
-  top: '20px'
+  top: '20px',
+  '@media (max-width: 1520px)': {
+    position: 'static',
+    width: '153px',
+    height: '23px',
+  },
 })
 
 const Logo4 = styled('img', {
@@ -122,8 +169,14 @@ const Logo4 = styled('img', {
   width: '230.43px',
   height: '37px',
   right: '25px',
-  top: '20px'
+  top: '20px',
+  '@media (max-width: 1520px)': {
+    position: 'static',
+    width: '152px',
+    height: '25px',
+  },
 })
+
 
 const DescriptionSection = styled('div', {
   display: 'flex',
@@ -139,8 +192,24 @@ const DescriptionSection = styled('div', {
   top: '1297px',
   background: '#F3F5F7',
   borderRadius: '16px',
-  textAlign: 'center'
+  textAlign: 'center',
+  '@media (max-width: 1520px)': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '32px 20px',
+    gap: '16px',
+    position: 'absolute',
+    width: '320px',
+    height: '511px',
+    left: 'calc(50% - 320px/2)',
+    top: '618px',
+    background: '#F3F5F7',
+    borderRadius: '8px',
+    textAlign: 'center',
+  }
 })
+
 
 const DescriptionTextContainer = styled('div', {
   boxSizing: 'border-box',
@@ -157,7 +226,14 @@ const DescriptionTextContainer = styled('div', {
   order: 0,
   alignSelf: 'center',
   flexGrow: 0,
-  zIndex: 0
+  zIndex: 0,
+  '@media (max-width: 1520px)': {
+    padding: '0px 0px 16px',
+    width: '280px',
+    height: '216px',
+    borderBottom: '1px solid #333F5B',
+    alignSelf: 'stretch',
+  }
 })
 
 const DescriptionText = styled('p', {
@@ -174,6 +250,13 @@ const DescriptionText = styled('p', {
   order: 0,
   flexGrow: 0,
   textAlign: 'justify',
+  '@media (max-width: 1520px)': {
+    width: '280px',
+    height: '200px',
+    fontSize: '14px',
+    paddingRight: 0,
+    flexGrow: 1,
+  },
 })
 
 const HighlightText = styled('h2', {
@@ -190,7 +273,13 @@ const HighlightText = styled('h2', {
   flexGrow: 0,
   zIndex: 1,
   textAlign: 'center',
-  margin: 0
+  margin: 0,
+  '@media (max-width: 1520px)': {
+    width: '280px',
+    height: '58px',
+    fontSize: '24px',
+    textAlign: 'center',
+  }
 })
 
 const AdditionalInfoContainer = styled('div', {
@@ -205,6 +294,15 @@ const AdditionalInfoContainer = styled('div', {
   order: 2,
   flexGrow: 0,
   zIndex: 2,
+  '@media (max-width: 1520px)': {
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '16px 0px 0px',
+    gap: '4px',
+    width: '280px',
+    height: '141px',
+    alignSelf: 'stretch',
+  }
 })
 
 const AdditionalInfoText = styled('p', {
@@ -218,14 +316,23 @@ const AdditionalInfoText = styled('p', {
   lineHeight: '180%',
   color: '#48536C',
   textAlign: 'justify',
+  '@media (max-width: 1520px)': {
+    width: '280px',
+    height: '125px',
+    fontSize: '14px',
+    paddingRight: 0,
+    flex: 'none',
+    order: 0,
+    flexGrow: 1,
+  }
 })
 
 const HomeSection1 = () => {
   return (
     <Section1>
-      <Braco />
-      <Menina src={menina} alt="Menina com óculos no computador" />
-      <Robo />
+      <>
+        <Menina src={menina} alt="Menina com óculos no computador" />
+      </>
       <SeloPrincipal src={selo} alt="Selo 20 anos" />
       <Formando src={formando} alt="Formando gerações que fazem a diferença" />
       <Assista src={assista} alt="Assista ao vídeo" />
