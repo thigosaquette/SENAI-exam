@@ -20,6 +20,7 @@ const BarraContainer = styled('header', {
   alignItems: 'center',
   background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 74.5%, rgba(0, 0, 0, 0.059) 100%), #FFFFFF',
   '@media (max-width: 1520px)': {
+    width: '360px',
     height: '3.125rem',
     left: 0,
     transform: 'none',
