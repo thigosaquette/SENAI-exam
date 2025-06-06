@@ -50,7 +50,7 @@ const TextContainer = styled('div', {
 const Title = styled('h2', {
   width: '379px',
   height: '114px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 700,
   fontSize: '32px',
@@ -72,7 +72,7 @@ const Title = styled('h2', {
 const Subtitle = styled('p', {
   width: '379px',
   height: '58px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '16px',
@@ -114,7 +114,7 @@ const FormContainer = styled('form', {
 const FormTitle = styled('h3', {
   width: '528px',
   height: '29px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 700,
   fontSize: '24px',
@@ -181,7 +181,7 @@ const ButtonSesi = styled('button', {
 const ButtonText = styled('span', {
   width: '129px',
   height: '16px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 600,
   fontSize: '16px',

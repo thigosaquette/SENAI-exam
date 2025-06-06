@@ -1,5 +1,7 @@
 import { createStitches } from '@stitches/react'
 
+// COMENTAR SOBRE
+
 export const {
   config,
   theme,
@@ -33,7 +35,7 @@ export const {
     white: '#FFFFFF',
   },
     fonts: {
-      primary: 'Nunito Sans, sans-serif',
+      primary: 'Open Sans, sans-serif',
     },
     fontSizes: {
       xxl: '32px',

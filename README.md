@@ -37,3 +37,14 @@ O projeto segue uma organização clara para facilitar o desenvolvimento:
 
 Licença
 Este projeto está sob a licença MIT.
+
+Estrutura de Desenvolvimento:
+
+1.Ambiente
+2.Configurações de projeto
+3.Desenvolvimento de Web Desktop Local
+4.Configuração de repositório online
+5.Teste em Deploy Containerzado Local
+6.Configuração de CI/CD Deploy
+7.Desenvolvimento de Web Mobile em repositório
+8.Correções e ajustes Desktop e Mobile.

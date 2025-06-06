@@ -129,7 +129,7 @@ const TextContainer = styled('div', {
 })
 
 const Title = styled('h2', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 700,
   fontSize: '32px',
@@ -154,7 +154,7 @@ const Title = styled('h2', {
 })
 
 const Description = styled('p', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '18px',
@@ -177,7 +177,7 @@ const Description = styled('p', {
 })
 
 const Description2 = styled('p', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '18px',
@@ -227,7 +227,7 @@ const ButtonSesi = styled('button', {
 })
 
 const ButtonText = styled('span', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 600,
   fontSize: '16px',
@@ -289,7 +289,7 @@ const FeatureIcon = styled('img', {
 })
 
 const FeatureText = styled('span', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '16px',

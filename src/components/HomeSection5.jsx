@@ -31,7 +31,7 @@ const Title = styled('h2', {
   width: '100%',
   maxWidth: '1216px',
   height: '76px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 700,
   fontSize: '32px',
@@ -189,7 +189,7 @@ const LinkButton = styled('div', {
 const ButtonText = styled('span', {
   width: '57px',
   height: '14px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '14px',
@@ -218,7 +218,7 @@ function CardItem({ bgColor, logo, logoWidth = '107px', logoHeight = '77px', des
       </HeaderCard>
       <CardBodyContainer>
         <CardBody>
-          <p style={{ fontFamily: 'Open Sans, sans-serif', fontSize: '14px', color: `${theme.colors.textNeutralMid}`, lineHeight: '150%' }}>{description}</p>
+          <p style={{ fontFamily: `${theme.fonts.primary}`, fontSize: '14px', color: `${theme.colors.textNeutralMid}`, lineHeight: '150%' }}>{description}</p>
         </CardBody>
       </CardBodyContainer>
       <ButtonContainer>

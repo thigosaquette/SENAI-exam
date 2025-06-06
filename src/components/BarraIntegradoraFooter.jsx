@@ -94,7 +94,7 @@ const DividerLine = styled('div', {
 })
 
 const LinkItem = styled('span', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontSize: '10px',
   lineHeight: '14px',
   color: '$textNeutralLight',
@@ -140,7 +140,7 @@ const Address = styled('div', {
   padding: '12px 0px',
   width: '452px',
   height: '52px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '12px',

@@ -1,5 +1,7 @@
 import { styled } from '../styles'
 
+// COMENTAR SOBRE
+
 const InputField = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -18,7 +20,7 @@ const InputField = styled('div', {
 })
 
 const Label = styled('label', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontSize: '14px',
   fontWeight: 400,
   color: '$background',

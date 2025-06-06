@@ -1,9 +1,12 @@
-import { styled, theme } from '../styles'
+import { styled, theme  } from '../styles'
 import fiep from '../assets/barra-integradora/Logo-barra-integradora-fiep.png'
 import iel from '../assets/barra-integradora/Logo-barra-integradora-iel.png'
 import senai from '../assets/barra-integradora/Logo-barra-integradora-senai.png'
 import sesi from '../assets/barra-integradora/Logo-barra-integradora-sesi.png'
 import sistemaFiep from '../assets/barra-integradora/Logo-barra-integradora-sistema-fiep.png'
+import { animations } from '../styles/animations/animations'
+
+// COMENTAR SOBRE
 
 const BarraContainer = styled('header', {
   position: 'absolute',
@@ -94,6 +97,7 @@ const LogoBase = styled('div', {
   right: 0,
   height: '0.25rem',
   display: 'none',
+  animation: `${animations.slideDown} 0.3s ease-out forwards`,
   '@media (max-width: 1520px)': {
     height: '0.125rem',
     bottom: '-0.1875rem',
@@ -142,7 +146,7 @@ const LinksUteis = styled('nav', {
 })
 
 const LinkItem = styled('span', {
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '0.75rem',

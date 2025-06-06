@@ -53,7 +53,7 @@ const ContainerTitle = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'flex-start',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '30px',
@@ -83,7 +83,7 @@ const BoldSpan = styled('span', {
 const ContainerDescription = styled('p', {
   width: '384px',
   height: '145px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '16px',
@@ -191,7 +191,7 @@ const TitleContainer = styled('div', {
   order: 0,
   alignSelf: 'stretch',
   flexGrow: 0,
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 600,
   fontSize: '28px',
@@ -218,7 +218,7 @@ const TitleContainer = styled('div', {
 const DescriptionText = styled('p', {
   width: '260px',
   height: '128px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '18px',
@@ -233,6 +233,8 @@ const DescriptionText = styled('p', {
     height: '128px',
   },
 })
+
+// COMENTAR SOBRE
 
 function Card({ image, title, description, top, color }) {
   return (

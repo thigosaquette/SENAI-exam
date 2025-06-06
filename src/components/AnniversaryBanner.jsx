@@ -3,6 +3,7 @@ import selo from '../assets/home-part-1/selo.png'
 import facebookIcon from '../assets/icons/facebook-icon.png'
 import instagramIcon from '../assets/icons/insta-icon.png'
 import youtubeIcon from '../assets/icons/youtube-icon.png'
+import { animations } from '../styles/animations/animations'
 
 const BannerWrapper = styled('section', {
   display: 'flex',
@@ -73,7 +74,7 @@ const TitleSubtitleWrapper = styled('div', {
 const BannerTitle = styled('h2', {
   width: '1016px',
   height: '38px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 700,
   fontSize: '32px',
@@ -117,7 +118,7 @@ const SocialSubtitleRow = styled('div', {
 const Subtitle = styled('p', {
   width: '494px',
   height: '29px',
-  fontFamily: 'Open Sans, sans-serif',
+  fontFamily: '$primary',
   fontStyle: 'normal',
   fontWeight: 400,
   fontSize: '16px',
@@ -146,7 +147,6 @@ const SocialIcons = styled('div', {
   height: '32px',
   '@media (max-width: 1520px)': {
     flexDirection: 'row',
-    alignItems: 'flex-start',
     marginTop: '10px',
     width: '126px',
     height: '32px',
@@ -160,6 +160,9 @@ const Icon = styled('img', {
   order: 0,
   flexGrow: 0,
   cursor: 'pointer',
+  '&:hover': {
+    animation: `${animations.scaleUp} 0.2s ease-out forwards`,
+  }
 })
 
 const FooterLinks = styled('div', {
