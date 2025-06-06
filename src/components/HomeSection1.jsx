@@ -68,7 +68,6 @@ const SeloPrincipal = styled('img', {
   },
 })
 
-
 const Formando = styled('img', {
   position: 'absolute',
   width: '914px',
@@ -83,7 +82,6 @@ const Formando = styled('img', {
     top: '155px',
   },
 })
-
 
 const Assista = styled('img', {
   position: 'absolute',
@@ -101,7 +99,6 @@ const Assista = styled('img', {
     borderRadius: '8px',
   },
 })
-
 
 const BarraLogos = styled('div', {
   position: 'absolute',
@@ -121,7 +118,6 @@ const BarraLogos = styled('div', {
     top: '447px',
   }
 })
-
 
 const Logo1 = styled('img', {
   position: 'absolute',
@@ -186,7 +182,6 @@ const Logo4 = styled('img', {
   },
 })
 
-
 const DescriptionSection = styled('div', {
   display: 'flex',
   flexDirection: 'column',
@@ -218,7 +213,6 @@ const DescriptionSection = styled('div', {
     textAlign: 'center',
   }
 })
-
 
 const DescriptionTextContainer = styled('div', {
   boxSizing: 'border-box',

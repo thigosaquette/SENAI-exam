@@ -33,7 +33,7 @@ const Title = styled('h2', {
   justifyContent: 'center', 
   textAlign: 'center', 
   color: '#111D4A' 
-});
+})
 
 const Container = styled('div', {
   display: 'flex',

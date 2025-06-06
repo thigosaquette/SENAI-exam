@@ -27,8 +27,7 @@ const Section3 = styled('section', {
     left: 'calc(50% - 360px/2)',
     top: '1843px',
   },
-});
-
+})
 
 const Container = styled('div', {
   display: 'flex',
@@ -46,8 +45,7 @@ const Container = styled('div', {
     order: 0,
     flexGrow: 0,
   },
-});
-
+})
 
 const ContainerTitle = styled('div', {
   width: '384px',
@@ -72,7 +70,7 @@ const ContainerTitle = styled('div', {
     alignSelf: 'stretch',
     flexGrow: 0,
   },
-});
+})
 
 const BoldSpan = styled('span', {
   fontWeight: 700,
@@ -99,7 +97,7 @@ const ContainerDescription = styled('p', {
     width: '320px',
     height: '203px',
   },
-});
+})
 
 const Cards = styled('div', {
   position: 'relative',
@@ -116,7 +114,7 @@ const Cards = styled('div', {
     flexGrow: 0,
     marginTop: '-25px',
   },
-});
+})
 
 const CardWrapper = styled('div', {
   width: '592px',
@@ -125,7 +123,7 @@ const CardWrapper = styled('div', {
     width: '320px',
     height: '447px',
   },
-});
+})
 
 const CardContent = styled('div', {
   display: 'flex',
@@ -148,7 +146,7 @@ const CardContent = styled('div', {
     alignSelf: 'stretch',
     flexGrow: 0,
   },
-});
+})
 
 const Selo = styled('img', {
   width: '260px',
@@ -160,8 +158,7 @@ const Selo = styled('img', {
     width: '260px',
     height: '145px',
   },
-});
-
+})
 
 const TextCardContainer = styled('div', {
   display: 'flex',
@@ -180,7 +177,7 @@ const TextCardContainer = styled('div', {
     flexGrow: 0,
     alignSelf: 'stretch',
   },
-});
+})
 
 const TitleContainer = styled('div', {
   display: 'flex',
@@ -216,7 +213,7 @@ const TitleContainer = styled('div', {
     alignSelf: 'stretch',
     flexGrow: 0,
   },
-});
+})
 
 const DescriptionText = styled('p', {
   width: '260px',
@@ -235,7 +232,7 @@ const DescriptionText = styled('p', {
     width: '272px',
     height: '128px',
   },
-});
+})
 
 function Card({ image, title, description, top, color }) {
   return (

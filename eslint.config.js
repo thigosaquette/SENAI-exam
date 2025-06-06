@@ -1,12 +1,15 @@
 import js from '@eslint/js'
 import globals from 'globals'
+
 import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
   { ignores: ['dist'] },
+
   {
     files: ['**/*.{js,jsx}'],
+    
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -16,10 +19,12 @@ export default [
         sourceType: 'module',
       },
     },
+
     plugins: {
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
     },
+
     rules: {
       ...js.configs.recommended.rules,
       ...reactHooks.configs.recommended.rules,
@@ -28,6 +33,12 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      'semi': ['error', 'never'], 
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: 'directive', next: '*' },
+      ],
+      'no-multiple-empty-lines': ['error', { max: 1 }],
     },
   },
 ]

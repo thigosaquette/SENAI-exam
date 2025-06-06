@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { styled } from '../styles';
+import React, { useState, useEffect } from 'react'
+import { styled } from '../styles'
 
-import menino from '../assets/home-part-2/pessoa-lendo.png';
-import icon1 from '../assets/home-part-2/mega-fone-icon.png';
-import icon2 from '../assets/home-part-2/robo-icon.png';
-import icon3 from '../assets/home-part-2/pessoa-icon.png';
-import icon4 from '../assets/home-part-2/mao-icon.png';
-import icon5 from '../assets/home-part-2/lampada-icon.png';
-import okIcon from '../assets/icons/ok-icon.png';
+import menino from '../assets/home-part-2/pessoa-lendo.png'
+import icon1 from '../assets/home-part-2/mega-fone-icon.png'
+import icon2 from '../assets/home-part-2/robo-icon.png'
+import icon3 from '../assets/home-part-2/pessoa-icon.png'
+import icon4 from '../assets/home-part-2/mao-icon.png'
+import icon5 from '../assets/home-part-2/lampada-icon.png'
+import okIcon from '../assets/icons/ok-icon.png'
 
 const useIsMobile = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const checkScreenSize = () => {
@@ -23,8 +23,8 @@ const useIsMobile = () => {
     return () => window.removeEventListener('resize', checkScreenSize)
   }, [])
 
-  return isMobile;
-};
+  return isMobile
+}
 
 const Section2 = styled('section', {
   display: 'flex',
@@ -47,13 +47,13 @@ const Section2 = styled('section', {
     left: 'calc(50% - 360px/2)',
     top: '1180px',
   },
-});
+})
 
 const ImageContainer = styled('div', {
   position: 'relative',
   width: '226px',
   height: '334px',
-});
+})
 
 const ImageBackground = styled('div', {
   position: 'absolute',
@@ -66,7 +66,7 @@ const ImageBackground = styled('div', {
   '@media (max-width: 1520px)': {
     display: 'none',
   },
-});
+})
 
 const MeninoImage = styled('img', {
   position: 'absolute',
@@ -78,7 +78,7 @@ const MeninoImage = styled('img', {
   '@media (max-width: 1520px)': {
     display: 'none',
   },
-});
+})
 
 const ContentContainer = styled('div', {
   display: 'flex',
@@ -100,7 +100,7 @@ const ContentContainer = styled('div', {
     alignSelf: 'stretch',
     flexGrow: 0,
   },
-});
+})
 
 const TextButtonContainer = styled('div', {
   display: 'flex',
@@ -113,8 +113,7 @@ const TextButtonContainer = styled('div', {
     width: '320px',
     height: '250px',
   },
-});
-
+})
 
 const TextContainer = styled('div', {
   display: 'flex',
@@ -127,7 +126,7 @@ const TextContainer = styled('div', {
     width: '320px',
     height: '250px',
   },
-});
+})
 
 const Title = styled('h2', {
   fontFamily: 'Open Sans, sans-serif',
@@ -152,7 +151,7 @@ const Title = styled('h2', {
     flexGrow: 0,
     paddingRight: 0,
   },
-});
+})
 
 const Description = styled('p', {
   fontFamily: 'Open Sans, sans-serif',
@@ -175,7 +174,7 @@ const Description = styled('p', {
     flexGrow: 0,
     paddingRight: 0,
   },
-});
+})
 
 const Description2 = styled('p', {
   fontFamily: 'Open Sans, sans-serif',
@@ -199,7 +198,7 @@ const Description2 = styled('p', {
     flexGrow: 0,
     paddingRight: 0,
   },
-});
+})
 
 const ButtonSesi = styled('button', {
   display: 'flex',
@@ -225,7 +224,7 @@ const ButtonSesi = styled('button', {
     alignSelf: 'stretch',
     flexGrow: 0,
   },
-});
+})
 
 const ButtonText = styled('span', {
   fontFamily: 'Open Sans, sans-serif',
@@ -245,7 +244,7 @@ const ButtonText = styled('span', {
     order: 0,
     flexGrow: 0,
   },
-});
+})
 
 const FeaturesContainer = styled('div', {
   display: 'flex',
@@ -263,8 +262,7 @@ const FeaturesContainer = styled('div', {
     alignSelf: 'stretch',
     flexGrow: 0,
   },
-});
-
+})
 
 const FeatureItem = styled('div', {
   display: 'flex',
@@ -279,8 +277,7 @@ const FeatureItem = styled('div', {
     height: '48px',
     padding: 0,
   },
-});
-
+})
 
 const FeatureIcon = styled('img', {
   width: '40px',
@@ -289,7 +286,7 @@ const FeatureIcon = styled('img', {
     width: '19px',
     height: '19px',
   },
-});
+})
 
 const FeatureText = styled('span', {
   fontFamily: 'Open Sans, sans-serif',
@@ -298,10 +295,10 @@ const FeatureText = styled('span', {
   fontSize: '16px',
   lineHeight: '120%',
   color: '#48536C',
-});
+})
 
 const HomeSection2 = () => {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile()
   const buttonText = isMobile ? 'Vou conhecer' : 'Quero conhecer'
 
   const features = [
@@ -310,7 +307,7 @@ const HomeSection2 = () => {
     { icon: icon3, text: 'Trabalhos em equipe' },
     { icon: icon4, text: 'Parcerias com a indústria' },
     { icon: icon5, text: 'Inovação e tecnologia' },
-  ];
+  ]
 
   return (
     <Section2>
@@ -341,7 +338,7 @@ const HomeSection2 = () => {
         </FeaturesContainer>
       </ContentContainer>
     </Section2>
-  );
-};
+  )
+}
 
-export default HomeSection2;
+export default HomeSection2
