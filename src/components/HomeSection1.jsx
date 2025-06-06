@@ -27,6 +27,17 @@ const Section1 = styled('section', {
   }
 })
 
+const Crop = styled('div', {
+  '@media (max-width: 1520px)': {
+    position: 'relative',
+    maxWidth: '210px',
+    height: '265px',
+    left: '150px',
+    top: '-5px',
+    overflowX: 'hidden'
+  }
+})
+
 const Menina = styled('img', {
   position: 'absolute',
   width: '589px',
@@ -37,10 +48,8 @@ const Menina = styled('img', {
   '@media (max-width: 1520px)': {
     width: '250px',
     height: '265px',
-    left: 'calc(50% - 60.73px / 2)',
+    left: '0px',
     top: '0px',
-    objectFit: 'cover',
-    objectPosition: '30% 80%',
   },
 })
 
@@ -68,9 +77,9 @@ const Formando = styled('img', {
   top: '359px',
   objectFit: 'contain',
   '@media (max-width: 1520px)': {
-    width: '874px',
-    height: '38.93px',
-    left: '-422px',
+    width: '274px',
+    height: '50.93px',
+    left: '-120px',
     top: '155px',
   },
 })
@@ -330,9 +339,9 @@ const AdditionalInfoText = styled('p', {
 const HomeSection1 = () => {
   return (
     <Section1>
-      <>
+      <Crop>
         <Menina src={menina} alt="Menina com óculos no computador" />
-      </>
+      </Crop>
       <SeloPrincipal src={selo} alt="Selo 20 anos" />
       <Formando src={formando} alt="Formando gerações que fazem a diferença" />
       <Assista src={assista} alt="Assista ao vídeo" />

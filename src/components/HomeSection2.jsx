@@ -122,6 +122,10 @@ const TextContainer = styled('div', {
   gap: '20px',
   width: '398px',
   height: '262px',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '250px',
+  },
 });
 
 const Title = styled('h2', {
