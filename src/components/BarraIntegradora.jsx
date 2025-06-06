@@ -1,4 +1,4 @@
-import { styled } from '../styles'
+import { styled, theme } from '../styles'
 import fiep from '../assets/barra-integradora/Logo-barra-integradora-fiep.png'
 import iel from '../assets/barra-integradora/Logo-barra-integradora-iel.png'
 import senai from '../assets/barra-integradora/Logo-barra-integradora-senai.png'
@@ -18,7 +18,9 @@ const BarraContainer = styled('header', {
   flexDirection: 'row',
   justifyContent: 'space-between',
   alignItems: 'center',
-  background: 'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 74.5%, rgba(0, 0, 0, 0.059) 100%), #FFFFFF',
+  background: '$background',
+  backgroundImage: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 74.5%, rgba(0,0,0,0.059) 100%)',
+
   '@media (max-width: 1520px)': {
     width: '100%',
     height: '3.125rem',
@@ -145,7 +147,7 @@ const LinkItem = styled('span', {
   fontWeight: 400,
   fontSize: '0.75rem',
   lineHeight: '1.25',
-  color: '#9BA2B0',
+  color: '$textNeutralLight',
   flex: 'none',
   flexGrow: 0,
   '@media (min-width: 360px)': {
@@ -159,7 +161,7 @@ const LinkItem = styled('span', {
 const Divider = styled('div', {
   width: '0px',
   height: '0.625rem',
-  borderLeft: '1px solid #9BA2B0',
+  borderLeft: '1px solid $textNeutralLight',
   flex: 'none',
   flexGrow: 0
 })
@@ -171,24 +173,25 @@ const BarraIntegradora = () => {
         <Logos>
           <LogoWrapper style={{ width: '5.5rem', height: '1.75rem' }}>
             <LogoShape src={sistemaFiep} style={{ width: '4.3rem', left: '0.5625rem' }} />
-            <LogoBase data-base style={{ background: '#192A6B' }} />
+            <LogoBase data-base style={{ background: theme.colors.sistemaFiepBlue }} />
           </LogoWrapper>
           <LogoWrapper style={{ width: '3.8125rem', height: '1.75rem' }}>
             <LogoShape src={fiep} style={{ width: '2.6875rem', left: '0.6875rem' }} />
-            <LogoBase data-base style={{ background: '#248EDF' }} />
+            <LogoBase data-base style={{ background: theme.colors.fiepBlue }} />
           </LogoWrapper>
           <LogoWrapper style={{ width: '4.5625rem', height: '1.75rem' }}>
             <LogoShape src={senai} style={{ width: '3.4375rem', left: '0.5625rem' }} />
-            <LogoBase data-base style={{ background: '#FF8901' }} />
+            <LogoBase data-base style={{ background: theme.colors.senaiOrange }} />
           </LogoWrapper>
           <LogoWrapper style={{ width: '3.8125rem', height: '1.75rem' }}>
             <LogoShape src={sesi} style={{ width: '2.6875rem', left: '0.5625rem' }} />
-            <LogoBase data-base style={{ background: '#96D200' }} />
+            <LogoBase data-base style={{ background: theme.colors.sesiGreen }} />
           </LogoWrapper>
           <LogoWrapper style={{ width: '3.0625rem', height: '1.75rem' }}>
             <LogoShape src={iel} style={{ width: '1.9375rem', left: '0.5625rem' }} />
-            <LogoBase data-base style={{ background: '#7314FF' }} />
+            <LogoBase data-base style={{ background: theme.colors.ielPurple }} />
           </LogoWrapper>
+
         </Logos>
         <DividerLine />
         <LinksUteis>

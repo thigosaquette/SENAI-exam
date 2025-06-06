@@ -88,7 +88,7 @@ const ContainerDescription = styled('p', {
   fontWeight: 400,
   fontSize: '16px',
   lineHeight: '180%',
-  color: '#48536C',
+  color: '$textNeutralMid',
   flex: 'none',
   order: 1,
   alignSelf: 'stretch',
@@ -198,11 +198,11 @@ const TitleContainer = styled('div', {
   lineHeight: '120%',
   variants: {
     color: {
-      roxo: { color: '#8749A7' },
-      azul: { color: '#4888A5' },
-      azulVerde: { color: '#49A7A4' },
-      verde: { color: '#82A235' },
-      laranja: { color: '#E77222' }
+      roxo: { color: '$highlightPurple' },
+      azul: { color: '$highlightBlue' },
+      azulVerde: { color: '$highlightTeal' },
+      verde: { color: '$highlightGreen' },
+      laranja: { color: '$highlightOrange' }
     }
   },
   '@media (max-width: 1520px)': {
@@ -223,7 +223,7 @@ const DescriptionText = styled('p', {
   fontWeight: 400,
   fontSize: '18px',
   lineHeight: '180%',
-  color: '#48536C',
+  color: '$textNeutralMid',
   flex: 'none',
   order: 1,
   alignSelf: 'stretch',

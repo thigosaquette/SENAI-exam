@@ -15,7 +15,7 @@ const BannerWrapper = styled('section', {
   width: '1920px',
   height: '200px',
   top: '5173px',
-  background: '#FFC800',
+  background: '$accentYellow',
   '@media (max-width: 1520px)': {
     flexDirection: 'column',
     alignItems: 'center',
@@ -47,7 +47,7 @@ const ContentContainer = styled('div', {
     gap: '8px',
     width: '320px',
     height: '162px',
-    borderBottom: '1px solid #111D4A',
+    borderBottom: '1px solid $textPrimaryBlue',
     flex: 'none',
     order: 0,
     alignSelf: 'stretch',
@@ -63,7 +63,7 @@ const TitleSubtitleWrapper = styled('div', {
   paddingBottom: '16px',
   width: '1016px',
   height: '86px',
-  borderBottom: '1px solid #111D4A',
+  borderBottom: '1px solid $textPrimaryBlue',
   '@media (max-width: 1520px)': {
     borderBottom: 'none',
     width: '320px',
@@ -80,7 +80,7 @@ const BannerTitle = styled('h2', {
   lineHeight: '120%',
   display: 'flex',
   alignItems: 'center',
-  color: '#111D4A',
+  color: '$textPrimaryBlue',
   '@media (max-width: 1520px)': {
     width: '320px',
     height: '58px',
@@ -122,7 +122,7 @@ const Subtitle = styled('p', {
   fontWeight: 400,
   fontSize: '16px',
   lineHeight: '180%',
-  color: '#111D4A',
+  color: '$textPrimaryBlue',
   '@media (max-width: 1520px)': {
     marginTop: '5px',
     width: '320px',
@@ -195,7 +195,7 @@ const FooterText = styled('span', {
   fontWeight: 400,
   fontSize: '12px',
   lineHeight: '180%',
-  color: '#333F5B',
+  color: '$textNeutralDark',
   cursor: 'pointer',
   height: '22px',
   '@media (max-width: 1520px)': {

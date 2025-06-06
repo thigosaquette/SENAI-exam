@@ -1,4 +1,4 @@
-import { styled } from '../styles'
+import { styled, theme } from '../styles'
 import linkIcon from '../assets/home-part-5/link-icon.png'
 import logo1 from '../assets/home-part-1/sesi-industria.png'
 import logo2 from '../assets/home-part-1/sesi-internacional.png'
@@ -40,7 +40,7 @@ const Title = styled('h2', {
   alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
-  color: '#111D4A',
+  color: '$textPrimaryBlue',
   '@media (max-width: 1520px)': {
     width: '320px',
     height: '116px',
@@ -80,7 +80,7 @@ const Card = styled('div', {
   padding: 0,
   width: '280px',
   height: '325.06px',
-  background: '#FFFFFF',
+  background: '$background',
   boxShadow: '0px 5px 14px -1px rgba(0, 0, 0, 0.12)',
   borderRadius: '8px',
   '@media (max-width: 1520px)': {
@@ -159,7 +159,7 @@ const ButtonContainer = styled('div', {
   gap: '8px',
   width: '280px',
   height: '48px',
-  background: '#FFFFFF',
+  background: '$background',
   borderBottomLeftRadius: '8px',
   borderBottomRightRadius: '8px',
   '@media (max-width: 1520px)': {
@@ -194,7 +194,7 @@ const ButtonText = styled('span', {
   fontWeight: 400,
   fontSize: '14px',
   lineHeight: '100%',
-  color: '#1670C0',
+  color: '$linkBlue',
   display: 'flex',
   alignItems: 'center',
   '@media (max-width: 1520px)': {
@@ -218,7 +218,7 @@ function CardItem({ bgColor, logo, logoWidth = '107px', logoHeight = '77px', des
       </HeaderCard>
       <CardBodyContainer>
         <CardBody>
-          <p style={{ fontFamily: 'Open Sans, sans-serif', fontSize: '14px', color: '#48536C', lineHeight: '150%' }}>{description}</p>
+          <p style={{ fontFamily: 'Open Sans, sans-serif', fontSize: '14px', color: `${theme.colors.textNeutralMid}`, lineHeight: '150%' }}>{description}</p>
         </CardBody>
       </CardBodyContainer>
       <ButtonContainer>

@@ -34,7 +34,8 @@ const LogoContainer = styled('div', {
   alignItems: 'center',
   '@media (max-width: 1520px)': {
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    width: '360px',
   },
 })
 
@@ -62,7 +63,8 @@ const LogoBox = styled('div', {
   justifyContent: 'center',
   alignItems: 'center',
   '@media (max-width: 1520px)': {
-    height: '28px'
+    width: '360px',
+    height: '28px',
   },
 })
 
@@ -95,7 +97,7 @@ const LinkItem = styled('span', {
   fontFamily: 'Open Sans, sans-serif',
   fontSize: '10px',
   lineHeight: '14px',
-  color: '#9BA2B0',
+  color: '$textNeutralLight',
   cursor: 'pointer',
   width: 'fit-content',
   height: '14px',
@@ -109,7 +111,7 @@ const LinkItem = styled('span', {
 const Divider = styled('div', {
   width: '0px',
   height: '10px',
-  borderLeft: '1px solid #9BA2B0',
+  borderLeft: '1px solid $textNeutralLight',
   '@media (max-width: 1520px)': {
     flex: 'none',
     order: 0,
@@ -144,7 +146,7 @@ const Address = styled('div', {
   fontSize: '12px',
   lineHeight: '120%',
   textAlign: 'center',
-  color: '#9BA2B0',
+  color: '$textNeutralLight',
   cursor: 'pointer',
   '@media (max-width: 1520px)': {
     flexDirection: 'row',

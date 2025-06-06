@@ -159,7 +159,7 @@ const Description = styled('p', {
   fontWeight: 400,
   fontSize: '18px',
   lineHeight: '180%',
-  color: '#48536C',
+  color: '$textNeutralMid',
   width: '368px',
   paddingRight: '30px',
   height: '128px',
@@ -182,7 +182,7 @@ const Description2 = styled('p', {
   fontWeight: 400,
   fontSize: '18px',
   lineHeight: '180%',
-  color: '#48536C',
+  color: '$textNeutralMid',
   width: '368px',
   paddingRight: '80px',
   height: '128px',
@@ -209,7 +209,7 @@ const ButtonSesi = styled('button', {
   gap: '4px',
   width: '398px',
   height: '48px',
-  background: '#96D200',
+  background: '$sesiGreen',
   borderRadius: '4px',
   border: 'none',
   cursor: 'pointer',
@@ -294,7 +294,7 @@ const FeatureText = styled('span', {
   fontWeight: 400,
   fontSize: '16px',
   lineHeight: '120%',
-  color: '#48536C',
+  color: '$textNeutralMid',
 })
 
 const HomeSection2 = () => {

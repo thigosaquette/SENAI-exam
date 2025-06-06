@@ -57,7 +57,7 @@ const Title = styled('h2', {
   lineHeight: '120%',
   display: 'flex',
   alignItems: 'center',
-  color: '#FFFFFF',
+  color: '$background',
   '@media (max-width: 1520px)': {
     width: '320px',
     height: '87px',
@@ -77,7 +77,7 @@ const Subtitle = styled('p', {
   fontWeight: 400,
   fontSize: '16px',
   lineHeight: '180%',
-  color: '#FFFFFF',
+  color: '$background',
   '@media (max-width: 1520px)': {
     width: '320px',
     height: '87px',
@@ -121,7 +121,7 @@ const FormTitle = styled('h3', {
   lineHeight: '120%',
   display: 'flex',
   alignItems: 'center',
-  color: '#FFFFFF',
+  color: '$background',
   '@media (max-width: 1520px)': {
     width: '280px',
     height: '58px',
@@ -160,7 +160,7 @@ const ButtonSesi = styled('button', {
   gap: '4px',
   width: '169px',
   height: '48px',
-  background: '#96D200',
+  background: '$sesiGreen',
   borderRadius: '4px',
   border: 'none',
   cursor: 'pointer',

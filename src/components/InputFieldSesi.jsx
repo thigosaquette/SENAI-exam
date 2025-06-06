@@ -21,7 +21,7 @@ const Label = styled('label', {
   fontFamily: 'Open Sans, sans-serif',
   fontSize: '14px',
   fontWeight: 400,
-  color: '#FFFFFF',
+  color: '$background',
   lineHeight: '120%',
   '@media (max-width: 1520px)': {
     fontSize: '12px',
@@ -37,7 +37,7 @@ const InputBox = styled('input', {
   borderRadius: '4px',
   border: 'none',
   fontSize: '14px',
-  color: '#9BA2B0',
+  color: '$textNeutralLight',
   boxSizing: 'border-box',
   '@media (max-width: 1520px)': {
     padding: '8px 12px',

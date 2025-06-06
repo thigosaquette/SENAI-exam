@@ -25,3 +25,6 @@ dist-ssr
 
 # Teste files
 teste.css
+
+*storybook.log
+storybook-static

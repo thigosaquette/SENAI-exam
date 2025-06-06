@@ -11,9 +11,27 @@ export const {
   createTheme
 } = createStitches({
   theme: {
-    colors: {
-      background: '#ffffff', // Branco
-    },
+  colors: {
+    background: '#ffffff',
+    textPrimaryBlue: '#111D4A',
+    textSecondaryBlue: '#192A6B',
+    textNeutralDark: '#333F5B',
+    textNeutralMid: '#48536C',
+    textNeutralLight: '#9BA2B0',
+    highlightPurple: '#8749A7',
+    highlightBlue: '#4888A5',
+    highlightTeal: '#49A7A4',
+    highlightGreen: '#82A235',
+    highlightOrange: '#E77222',
+    accentYellow: '#FFC800',
+    linkBlue: '#1670C0',
+    sistemaFiepBlue: '#192A6B',
+    fiepBlue: '#248EDF',
+    senaiOrange: '#FF8901',
+    sesiGreen: '#96D200',
+    ielPurple: '#7314FF',
+    white: '#FFFFFF',
+  },
     fonts: {
       primary: 'Nunito Sans, sans-serif',
     },
