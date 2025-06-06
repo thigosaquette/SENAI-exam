@@ -16,6 +16,7 @@ export const globalStyles = globalCss({
 html: {
   maxWidth: '100%',
   maxHeight: '100%',
+  overflowX: 'hidden',
 },
 body: {
   width: '100%',
@@ -23,7 +24,7 @@ body: {
   margin: 0,
   display: 'flex',
   placeItems: 'center',
-  minWidth: '320px',
+  minWidth: '360px',
   minHeight: '100vh',
   overflowX: 'hidden',
 },

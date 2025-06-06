@@ -68,6 +68,17 @@ const SeloPrincipal = styled('img', {
   },
 })
 
+const CropFormando = styled('div', {
+  '@media (max-width: 1520px)': {
+    position: 'absolute',
+    width: '174px',
+    height: '50.93px',
+    left: '0px',
+    top: '155px',
+    overflow: 'auto',
+  }
+})
+
 const Formando = styled('img', {
   position: 'absolute',
   width: '914px',
@@ -79,7 +90,7 @@ const Formando = styled('img', {
     width: '274px',
     height: '50.93px',
     left: '-120px',
-    top: '155px',
+    top: '0',
   },
 })
 
@@ -337,7 +348,9 @@ const HomeSection1 = () => {
         <Menina src={menina} alt="Menina com óculos no computador" />
       </Crop>
       <SeloPrincipal src={selo} alt="Selo 20 anos" />
-      <Formando src={formando} alt="Formando gerações que fazem a diferença" />
+      <CropFormando>
+        <Formando src={formando} alt="Formando gerações que fazem a diferença" />
+      </CropFormando>
       <Assista src={assista} alt="Assista ao vídeo" />
       <BarraLogos>
         <Logo1 src={sesiIndustria} alt="Sesi Indústria" />

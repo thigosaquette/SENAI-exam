@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import AnniversaryBanner from '../components/AnniversaryBanner'
 import HomeSection1 from '../components/HomeSection1'
 import HomeSection2 from '../components/HomeSection2'
@@ -10,43 +9,18 @@ import { styled } from '@stitches/react'
 const Container = styled('div', {
   width: '100%',
   height: '100%',
-  overflow: 'hidden',
+  overflowX: 'hidden',
 })
 
 const Home = () => {
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMobile(window.matchMedia('(max-width: 1520px)').matches)
-    }
-    
-    checkScreenSize()
-    window.addEventListener('resize', checkScreenSize)
-
-    return () => window.removeEventListener('resize', checkScreenSize)
-  }, [])
-
   return (
     <Container>
-      {!isMobile ? (
-        <>
-          <HomeSection1 />
-          <HomeSection2 />
-          <HomeSection3 />
-          <HomeSection4 />
-          <HomeSection5 />
-          <AnniversaryBanner />
-        </>
-      ) : (
-        <>
-          <HomeSection1 />
-          <HomeSection2 />
-          <HomeSection3 />
-          <HomeSection4 />
-          <HomeSection5 />
-        </>
-      )}
+      <HomeSection1 />
+      <HomeSection2 />
+      <HomeSection3 />
+      <HomeSection4 />
+      <HomeSection5 />
+      <AnniversaryBanner />
     </Container>
   )
 }

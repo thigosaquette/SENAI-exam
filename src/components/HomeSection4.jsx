@@ -23,7 +23,7 @@ const Section4 = styled('section', {
     width: '360px',
     height: '703px',
     left: 'calc(50% - 360px/2)',
-    top: '4464px',
+    top: '4463px',
   },
 })
 
