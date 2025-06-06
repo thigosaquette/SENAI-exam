@@ -6,7 +6,15 @@ const InputField = styled('div', {
   alignItems: 'flex-start',
   gap: '4px',
   width: '528px',
-  height: '69px'
+  height: '69px',
+  '@media (max-width: 1520px)': {
+    width: '280px',
+    height: '58px',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const Label = styled('label', {
@@ -14,7 +22,11 @@ const Label = styled('label', {
   fontSize: '14px',
   fontWeight: 400,
   color: '#FFFFFF',
-  lineHeight: '120%'
+  lineHeight: '120%',
+  '@media (max-width: 1520px)': {
+    fontSize: '12px',
+    height: '14px',
+  },
 })
 
 const InputBox = styled('input', {
@@ -26,7 +38,16 @@ const InputBox = styled('input', {
   border: 'none',
   fontSize: '14px',
   color: '#9BA2B0',
-  boxSizing: 'border-box'
+  boxSizing: 'border-box',
+  '@media (max-width: 1520px)': {
+    padding: '8px 12px',
+    width: '280px',
+    height: '40px',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 export default function InputFieldSesi({ label, placeholder }) {

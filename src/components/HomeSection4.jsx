@@ -15,6 +15,16 @@ const Section4 = styled('section', {
   top: '4044px',
   background: 'linear-gradient(135.33deg, #4751A8 10.54%, #111D4B 84.86%)',
   boxSizing: 'border-box',
+  '@media (max-width: 1520px)': {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    padding: '32px 20px',
+    gap: '37px',
+    width: '360px',
+    height: '703px',
+    left: 'calc(50% - 360px/2)',
+    top: '4464px',
+  },
 })
 
 const TextContainer = styled('div', {
@@ -25,7 +35,16 @@ const TextContainer = styled('div', {
   gap: '8px',
   margin: '0 auto',
   width: '379px',
-  height: '180px'
+  height: '180px',
+  '@media (max-width: 1520px)': {
+    gap: '16px',
+    width: '320px',
+    height: '190px',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const Title = styled('h2', {
@@ -38,7 +57,16 @@ const Title = styled('h2', {
   lineHeight: '120%',
   display: 'flex',
   alignItems: 'center',
-  color: '#FFFFFF'
+  color: '#FFFFFF',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '87px',
+    fontSize: '24px',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const Subtitle = styled('p', {
@@ -49,7 +77,15 @@ const Subtitle = styled('p', {
   fontWeight: 400,
   fontSize: '16px',
   lineHeight: '180%',
-  color: '#FFFFFF'
+  color: '#FFFFFF',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '87px',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const FormContainer = styled('form', {
@@ -62,7 +98,17 @@ const FormContainer = styled('form', {
   width: '592px',
   height: '436px',
   background: 'rgba(255, 255, 255, 0.1)',
-  borderRadius: '12px'
+  borderRadius: '12px',
+  '@media (max-width: 1520px)': {
+    padding: '32px 20px',
+    width: '320px',
+    height: '412px',
+    borderRadius: '8px',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const FormTitle = styled('h3', {
@@ -75,7 +121,15 @@ const FormTitle = styled('h3', {
   lineHeight: '120%',
   display: 'flex',
   alignItems: 'center',
-  color: '#FFFFFF'
+  color: '#FFFFFF',
+  '@media (max-width: 1520px)': {
+    width: '280px',
+    height: '58px',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const FormFields = styled('div', {
@@ -85,7 +139,16 @@ const FormFields = styled('div', {
   padding: 0,
   gap: '16px',
   width: '528px',
-  height: '319px'
+  height: '319px',
+  '@media (max-width: 1520px)': {
+    gap: '12px',
+    width: '280px',
+    height: '198px',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const ButtonSesi = styled('button', {
@@ -104,6 +167,15 @@ const ButtonSesi = styled('button', {
   boxSizing: 'border-box',
   flexShrink: 0,
   marginTop: '16px',
+  '@media (max-width: 1520px)': {
+    padding: '0px 16px',
+    width: '100%',
+    height: '40px',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const ButtonText = styled('span', {
@@ -117,7 +189,12 @@ const ButtonText = styled('span', {
   color: '#192A6B',
   display: 'flex',
   alignItems: 'center',
-  textAlign: 'center'
+  textAlign: 'center',
+  '@media (max-width: 1520px)': {
+    width: '113px',
+    height: '14px',
+    fontSize: '14px',
+  },
 })
 
 export default function HomeSection4() {
