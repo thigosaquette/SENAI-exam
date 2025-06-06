@@ -40,7 +40,7 @@ Este projeto está sob a licença MIT.
 
 Estrutura de Desenvolvimento:
 
-1.Ambiente
+1.Configuração do ambiente
 2.Configurações de projeto
 3.Desenvolvimento de Web Desktop Local
 4.Configuração de repositório online
