@@ -16,23 +16,41 @@ const Section5 = styled('section', {
   height: '565px',
   left: 'calc(50% - 1920px/2)',
   top: '4608px',
-  background: '#FFD333'
+  background: '#FFD333',
+  '@media (max-width: 1520px)': {
+    padding: '32px 20px',
+    gap: '20px',
+    width: '360px',
+    height: '529px',
+    left: 'calc(50% - 360px/2)',
+    top: '5167px',
+  },
 })
 
-const Title = styled('h2', { 
-  width: '100%', 
-  maxWidth: '1216px', 
-  height: '76px', 
-  fontFamily: 'Open Sans, sans-serif', 
-  fontStyle: 'normal', 
-  fontWeight: 700, 
-  fontSize: '32px', 
-  lineHeight: '120%', 
-  display: 'flex', 
-  alignItems: 'center', 
-  justifyContent: 'center', 
-  textAlign: 'center', 
-  color: '#111D4A' 
+const Title = styled('h2', {
+  width: '100%',
+  maxWidth: '1216px',
+  height: '76px',
+  fontFamily: 'Open Sans, sans-serif',
+  fontStyle: 'normal',
+  fontWeight: 700,
+  fontSize: '32px',
+  lineHeight: '120%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+  color: '#111D4A',
+  '@media (max-width: 1520px)': {
+    width: '320px',
+    height: '116px',
+    fontSize: '24px',
+    color: '#192A6B',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const Container = styled('div', {
@@ -42,7 +60,17 @@ const Container = styled('div', {
   padding: 0,
   gap: '32px',
   width: '1216px',
-  height: '329px'
+  height: '329px',
+  '@media (max-width: 1520px)': {
+    gap: '16px',
+    width: '320px',
+    height: '329px',
+    overflowX: 'scroll',
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const Card = styled('div', {
@@ -54,7 +82,14 @@ const Card = styled('div', {
   height: '325.06px',
   background: '#FFFFFF',
   boxShadow: '0px 5px 14px -1px rgba(0, 0, 0, 0.12)',
-  borderRadius: '8px'
+  borderRadius: '8px',
+  '@media (max-width: 1520px)': {
+    width: '280px',
+    height: '325.06px',
+    flex: 'none',
+    order: 0,
+    flexGrow: 0,
+  },
 })
 
 const HeaderCard = styled('div', {
@@ -67,7 +102,14 @@ const HeaderCard = styled('div', {
   width: '280px',
   height: '137.06px',
   borderTopLeftRadius: '8px',
-  borderTopRightRadius: '8px'
+  borderTopRightRadius: '8px',
+  '@media (max-width: 1520px)': {
+    background: '#8448D1',
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const Logo = styled('img', {
@@ -83,7 +125,13 @@ const CardBodyContainer = styled('div', {
   padding: '0px 20px 24px',
   gap: '8px',
   width: '280px',
-  height: '140px'
+  height: '140px',
+  '@media (max-width: 1520px)': {
+    flex: 'none',
+    order: 1,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const CardBody = styled('div', {
@@ -93,7 +141,13 @@ const CardBody = styled('div', {
   padding: '16px 0px 0px',
   gap: '8px',
   width: '240px',
-  height: '116px'
+  height: '116px',
+  '@media (max-width: 1520px)': {
+    flex: 'none',
+    order: 0,
+    alignSelf: 'stretch',
+    flexGrow: 0,
+  },
 })
 
 const ButtonContainer = styled('div', {
@@ -107,7 +161,12 @@ const ButtonContainer = styled('div', {
   height: '48px',
   background: '#FFFFFF',
   borderBottomLeftRadius: '8px',
-  borderBottomRightRadius: '8px'
+  borderBottomRightRadius: '8px',
+  '@media (max-width: 1520px)': {
+    flex: 'none',
+    order: 2,
+    flexGrow: 0,
+  },
 })
 
 const LinkButton = styled('div', {
@@ -120,6 +179,11 @@ const LinkButton = styled('div', {
   height: '24px',
   borderRadius: '4px',
   cursor: 'pointer',
+  '@media (max-width: 1520px)': {
+    flex: 'none',
+    order: 0,
+    flexGrow: 0,
+  },
 })
 
 const ButtonText = styled('span', {
@@ -132,7 +196,12 @@ const ButtonText = styled('span', {
   lineHeight: '100%',
   color: '#1670C0',
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
+  '@media (max-width: 1520px)': {
+    flex: 'none',
+    order: 0,
+    flexGrow: 0,
+  },
 })
 
 const Icon = styled('img', {
