@@ -14,8 +14,8 @@ export const globalStyles = globalCss({
     MozOsxFontSmoothing: 'grayscale',
   },
 html: {
-  width: '100%',
-  height: '100%',
+  maxWidth: '100%',
+  maxHeight: '100%',
 },
 body: {
   width: '100%',
@@ -25,6 +25,7 @@ body: {
   placeItems: 'center',
   minWidth: '320px',
   minHeight: '100vh',
+  overflowX: 'hidden',
 },
   h1: {
     margin: 0,

@@ -88,6 +88,7 @@ const ContentContainer = styled('div', {
   width: '750px',
   height: '334px',
   '@media (max-width: 1520px)': {
+    marginTop: '-24px',
     flexDirection: 'column',
     alignItems: 'flex-start',
     padding: '0px',
@@ -186,7 +187,7 @@ const Description2 = styled('p', {
   width: '368px',
   paddingRight: '80px',
   height: '128px',
-  marginTop: '-18px',
+  marginTop: '-20px',
   '@media (max-width: 1520px)': {
     width: '320px',
     height: '80px',
@@ -214,6 +215,8 @@ const ButtonSesi = styled('button', {
   border: 'none',
   cursor: 'pointer',
   '@media (max-width: 1520px)': {
+    position: 'absolute',
+    bottom: '32px',
     padding: '0px 16px',
     width: '320px',
     height: '40px',
@@ -299,6 +302,7 @@ const FeatureText = styled('span', {
 
 const HomeSection2 = () => {
   const isMobile = useIsMobile();
+  const buttonText = isMobile ? 'Vou conhecer' : 'Quero conhecer'
 
   const features = [
     { icon: icon1, text: 'Protagonismo' },
@@ -325,9 +329,7 @@ const HomeSection2 = () => {
               Conheça mais sobre nosso modelo de ensino inovador. <br />
             </Description2>
           </TextContainer>
-          {!isMobile && (
-            <ButtonSesi><ButtonText>Quero conhecer</ButtonText></ButtonSesi>
-          )}
+          <ButtonSesi><ButtonText>{buttonText}</ButtonText></ButtonSesi>
         </TextButtonContainer>
         <FeaturesContainer>
           {features.map((feature, index) => (
@@ -337,9 +339,6 @@ const HomeSection2 = () => {
             </FeatureItem>
           ))}
         </FeaturesContainer>
-        {isMobile && (
-          <ButtonSesi><ButtonText>Vou conhecer</ButtonText></ButtonSesi>
-        )}
       </ContentContainer>
     </Section2>
   );
