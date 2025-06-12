@@ -1,5 +1,5 @@
-import { styled } from '../styles'
-import InputFieldSesi from './InputFieldSesi'
+import { styled } from '../../styles'
+import InputFieldSesi from '../InputFieldSesi'
   
 const Section4 = styled('section', {
   display: 'flex',

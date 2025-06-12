@@ -1,9 +1,9 @@
-import { styled, theme } from '../styles'
-import linkIcon from '../assets/home-part-5/link-icon.png'
-import logo1 from '../assets/home-part-1/sesi-industria.png'
-import logo2 from '../assets/home-part-1/sesi-internacional.png'
-import logo3 from '../assets/home-part-1/sesi-referencia-industria.png'
-import logo4 from '../assets/home-part-1/sesi-referencia-internacional.png'
+import { styled, theme } from '../../styles'
+import linkIcon from '../../assets/home-part-5/link-icon.png'
+import logo1 from '../../assets/home-part-1/sesi-industria.png'
+import logo2 from '../../assets/home-part-1/sesi-internacional.png'
+import logo3 from '../../assets/home-part-1/sesi-referencia-industria.png'
+import logo4 from '../../assets/home-part-1/sesi-referencia-internacional.png'
 
 const Section5 = styled('section', {
   display: 'flex',

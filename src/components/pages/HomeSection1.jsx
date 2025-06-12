@@ -1,14 +1,14 @@
-import { styled } from '../styles'
+import { styled } from '../../styles'
 
-import assista from '../assets/home-part-1/assista.png'
-import formando from '../assets/home-part-1/formando.png'
-import menina from '../assets/home-part-1/menina.png'
-import selo from '../assets/home-part-1/selo.png'
-import sectionBackground from '../assets/home-part-1/section_1_background.jpg'
-import sesiIndustria from '../assets/home-part-1/sesi-industria.png'
-import sesiInternacional from '../assets/home-part-1/sesi-internacional.png'
-import sesiReferenciaIndustria from '../assets/home-part-1/sesi-referencia-industria.png'
-import sesiReferenciaInternacional from '../assets/home-part-1/sesi-referencia-internacional.png'
+import assista from '../../assets/home-part-1/assista.png'
+import formando from '../../assets/home-part-1/formando.png'
+import menina from '../../assets/home-part-1/menina.png'
+import selo from '../../assets/home-part-1/selo.png'
+import sectionBackground from '../../assets/home-part-1/section_1_background.jpg'
+import sesiIndustria from '../../assets/home-part-1/sesi-industria.png'
+import sesiInternacional from '../../assets/home-part-1/sesi-internacional.png'
+import sesiReferenciaIndustria from '../../assets/home-part-1/sesi-referencia-industria.png'
+import sesiReferenciaInternacional from '../../assets/home-part-1/sesi-referencia-internacional.png'
 
 const Section1 = styled('section', {
   position: 'absolute',

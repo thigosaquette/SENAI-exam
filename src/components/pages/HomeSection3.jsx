@@ -1,9 +1,9 @@
-import { styled } from '../styles'
-import seloRoxo from '../assets/home-part-3/selo-roxo.png'
-import seloAzul from '../assets/home-part-3/selo-azul.png'
-import seloAzulVerde from '../assets/home-part-3/selo-azul-verde.png'
-import seloVerde from '../assets/home-part-3/selo-verde.png'
-import seloLaranja from '../assets/home-part-3/selo-laranja.png'
+import { styled } from '../../styles'
+import seloRoxo from '../../assets/home-part-3/selo-roxo.png'
+import seloAzul from '../../assets/home-part-3/selo-azul.png'
+import seloAzulVerde from '../../assets/home-part-3/selo-azul-verde.png'
+import seloVerde from '../../assets/home-part-3/selo-verde.png'
+import seloLaranja from '../../assets/home-part-3/selo-laranja.png'
 
 const Section3 = styled('section', {
   display: 'flex',

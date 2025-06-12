@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import { styled } from '../styles'
+import { styled } from '../../styles'
 
-import menino from '../assets/home-part-2/pessoa-lendo.png'
-import icon1 from '../assets/home-part-2/mega-fone-icon.png'
-import icon2 from '../assets/home-part-2/robo-icon.png'
-import icon3 from '../assets/home-part-2/pessoa-icon.png'
-import icon4 from '../assets/home-part-2/mao-icon.png'
-import icon5 from '../assets/home-part-2/lampada-icon.png'
-import okIcon from '../assets/icons/ok-icon.png'
+import menino from '../../assets/home-part-2/pessoa-lendo.png'
+import icon1 from '../../assets/home-part-2/mega-fone-icon.png'
+import icon2 from '../../assets/home-part-2/robo-icon.png'
+import icon3 from '../../assets/home-part-2/pessoa-icon.png'
+import icon4 from '../../assets/home-part-2/mao-icon.png'
+import icon5 from '../../assets/home-part-2/lampada-icon.png'
+import okIcon from '../../assets/icons/ok-icon.png'
 
 const useIsMobile = () => {
   const [isMobile, setIsMobile] = useState(false)
